@@ -1,4 +1,5 @@
 import { NextPage } from 'next'
+import NavBar from "./components/NavBar";
 
 interface Props {
   userAgent?: string;
@@ -7,6 +8,7 @@ interface Props {
 const Home: NextPage<Props> = ({ userAgent }) => {
   return (
     <div>
+      <NavBar/>
     </div>
   )
 }
