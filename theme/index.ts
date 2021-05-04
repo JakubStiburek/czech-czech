@@ -8,21 +8,21 @@ export const theme = createTheme({
         fontSize: "5rem",
         lineHeight: "5rem",
         fontWeight: 700,
-        color: "black",
+        color: "#1D0A1F",
         fontFamily: "heading-sans"
       },
       _h2: {
         fontSize: "2.625rem",
         lineHeight: "3.5rem",
         fontWeight: 700,
-        color: "black",
+        color: "#1D0A1F",
         fontFamily: "heading-sans"
       },
       _h3: {
         fontSize: "1.5rem",
         lineHeight: "2rem",
         fontWeight: 700,
-        color: "black",
+        color: "#1D0A1F",
         fontFamily: "heading-sans"
       },
       _h4: {
@@ -35,7 +35,7 @@ export const theme = createTheme({
         fontFamily: "heading-sans"
       },
       _p: {
-        color: "black",
+        color: "#1D0A1F",
         fontFamily: "heading-sans"
       },
       _lead: {

@@ -14,6 +14,7 @@ export const xstyledTheme: Theme = {
     white: "#fff",
     lightGray: "#c7cace",
     darkGray: "#5e6062",
-    solidWhite: "#dee1e5"
+    solidWhite: "#dee1e5",
+    yellowish: "#83A838"
   }
 };
