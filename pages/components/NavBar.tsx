@@ -1,28 +1,24 @@
-import React from 'react';
 import NavButton from "./NavButton";
 import { x } from '@xstyled/styled-components'
+import { FC } from "react";
+import { Container } from "anolis-ui";
 
-const NavBar = () => {
+const NavBar: FC = () => {
   return (
     <x.div
     h="max-content"
-    bg="blue-gray-200"
-    borderBottom={2}
-    borderColor="blue-gray-400"
+    borderBottom="1"
     position="sticky" //sticks to top, TODO test it
-    top={0}
+    top="0"
     >
-      <x.ul
-      listStyleType="none"
-      display="flex"
-      gap={0.5}
-      m="auto"
+      <x.div
       w="max-content"
+      mx="auto"
       >
-          <NavButton caption="HOME" link="/" />
-          <NavButton caption="SECOND PAGE" link="/" />
-          <NavButton caption="THIRD PAGE" link="/" />
-      </x.ul>
+        <NavButton label="HOME" link="/" />
+        <NavButton label="SECOND PAGE" link="/" />
+        <NavButton label="THIRD PAGE" link="/" />
+      </x.div>
     </x.div>
   )
 };

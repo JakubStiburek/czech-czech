@@ -1,22 +1,22 @@
-import 'styles/globals.css'
-import type { AppProps /*, AppContext */ } from 'next/app'
-import {
-  defaultTheme,
-  ThemeProvider,
-  Preflight,
-} from '@xstyled/styled-components';
+import { AppProps } from "next/app";
+import Head from "next/head";
+import React from "react";
+import { AnolisProvider } from "anolis-ui"
+import { xstyledTheme } from "theme/xstyled";
+import { theme } from "theme";
 
-const theme = {
-  ...defaultTheme
-}
-
-function MyApp({ Component, pageProps }: AppProps) {
+const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <ThemeProvider theme={theme}>
-      <Preflight />
-      <Component {...pageProps} />
-    </ThemeProvider>
-  )
-}
+    <>
+      <Head>
+        <title key="title">CZECH-CZECH</title>
+      </Head>
 
-export default MyApp
+      <AnolisProvider theme={theme} xstyledTheme={xstyledTheme}>
+        <Component {...pageProps} />
+      </AnolisProvider>
+    </>
+  );
+};
+
+export default App;

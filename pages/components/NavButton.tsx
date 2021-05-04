@@ -1,26 +1,19 @@
-import React from "react";
 import { x } from '@xstyled/styled-components';
 import Link from 'next/Link';
+import { Button } from "anolis-ui";
 
 interface Props {
-  caption: string,
+  label: string,
   link: string
 }
 
-const NavButton = ({caption, link}: Props) => {
+const NavButton = ({label, link}: Props) => {
   return (
-    <x.li
-    fontSize="1.5rem"
-    p="5px"
-    bg="blue-gray-300"
-    hoverBg="blue-gray-400"
-    >
-      <Link href={link}>
-        <a>
-          {caption}
-        </a>
-      </Link>
-    </x.li>
+      <Button v="clear" s="md">
+        <Link href={link} passHref>
+          {label}
+        </Link>
+      </Button>
   )
 };
 
